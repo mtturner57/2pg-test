@@ -3,6 +3,6 @@ trigger ContactTrigger on Contact (before insert, before update) {
         ContactHelper.changeContact(Trigger.New);
     }
     else if(Trigger.isBefore && Trigger.isUpdate){
-        ContactHelper.updateContact(Trigger.New);
+        ContactHelper2.updateContact(Trigger.New);
     }
 }
