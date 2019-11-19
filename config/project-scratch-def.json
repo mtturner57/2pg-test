@@ -1,7 +1,27 @@
 {
-    "orgName": "Your Company Name",
+    "orgName": "Test Boi",
     "edition": "Developer",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+    "hasSampleData": true,
+    "features": [
+        "Communities",
+        "AuthorApex",
+        "DebugApex"
+    ],
+    "settings": {
+        "quoteSettings": {
+            "enableQuote": true
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+        "languageSettings": {
+            "enableTranslationWorkbench": true
+        },
+        "apexSettings": {
+            "enableDisableParallelApexTesting": true
+        }
     }
 }
