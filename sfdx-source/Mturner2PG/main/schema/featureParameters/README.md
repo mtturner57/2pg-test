@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / main / schema / featureParameters
+# TODO: sfdx-source / Mturner2PG / main / schema / featureParameters
 
 ### What type of files should be kept in this directory?
 

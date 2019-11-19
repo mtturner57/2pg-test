@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / main / default / permissionsets
+# TODO: sfdx-source / Mturner2PG / main / default / permissionsets
 
 ### What type of files should be kept in this directory?
 

@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / test / javascript
+# TODO: sfdx-source / Mturner2PG / test / javascript
 
 ### What type of files should be kept in this directory?
 

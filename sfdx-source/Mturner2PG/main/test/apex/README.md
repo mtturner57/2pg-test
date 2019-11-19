@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / main / test / apex
+# TODO: sfdx-source / Mturner2PG / main / test / apex
 
 ### What type of files should be kept in this directory?
 

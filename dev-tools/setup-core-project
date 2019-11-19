@@ -206,7 +206,7 @@ function updateSfdxProjectJson () {
   # Use PERLs in-place find-and-replace to modify the line in 
   # sfdx-project.json where the default package directory is set
   # by argument 1.  In other words...
-  #     { "path": "sfdx-source/my_ns_prefix", "default": true },
+  #     { "path": "sfdx-source/Mturner2PG", "default": true },
   #   becomes....
   #     { "path": "sfdx-source/new_ns_prefix_value", "default": true },
   perl -pi -e "s#.*\"default\": true.*#    { \"path\": \"sfdx-source/${1}\", \"default\": true },#g;" "$DETECTED_PROJECT_ROOT/sfdx-project.json"
@@ -220,7 +220,7 @@ function updateSfdxProjectJson () {
   fi
 
   # Use the same PERL mechanism to modify the "namespace" key-value pair.  Example...
-  #     "namespace": "my_ns_prefix",
+  #     "namespace": "Mturner2PG",
   #   becomes...
   #     "namespace": "new_ns_prefix_value",
   perl -pi -e "s#.*\"namespace\":.*#  \"namespace\": \"${1}\",#g;" "$DETECTED_PROJECT_ROOT/sfdx-project.json"  

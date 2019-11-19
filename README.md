@@ -119,14 +119,14 @@ sfdx force:auth:web:login -a DevHub -d
 ```
 # force:auth:web:login
 # -a --SETALIAS                   Set an alias for the authenticated org
-sfdx force:auth:web:login -a my_ns_prefix-PACKAGING 
+sfdx force:auth:web:login -a Mturner2PG-PACKAGING 
 ```
 ### Connect the CLI to a Sandbox Org (Optional)
 ```
 # force:auth:web:login
 # -a --SETALIAS                   Set an alias for the authenticated org
 # -r --INSTANCEURL                The login URL of the instance the org lives on
-sfdx force:auth:web:login -a my_ns_prefix-SANDBOX -r https://test.salesforce.com
+sfdx force:auth:web:login -a Mturner2PG-SANDBOX -r https://test.salesforce.com
 ```
 You are now ready to customize your Salesforce DX project and the SFDX-Falcon directories and scripts.
 
@@ -134,10 +134,10 @@ You are now ready to customize your Salesforce DX project and the SFDX-Falcon di
 In order to fully utilize the SFDX-Falcon Template, you should complete the following final customizations inside of your project/repository. Once these tasks are complete, you will be ready to download/convert metadata from your packaging org.
 
 ### Customize SFDX-Falcon directory names
-From the root of your project directory, rename the "my_ns_prefix" directory in sfdx-source so that it matches the namespace prefix of your managed package.
+From the root of your project directory, rename the "Mturner2PG" directory in sfdx-source so that it matches the namespace prefix of your managed package.
 ```
 # Execute this from the root of your project directory
-mv ./sfdx-source/my_ns_prefix ./sfdx-source/your_ns_prefix
+mv ./sfdx-source/Mturner2PG ./sfdx-source/your_ns_prefix
 ```
 ### Customize Salesforce DX project settings
 There are two required edits (and one optional one) you need to make inside your `sfdx-project.json` file.

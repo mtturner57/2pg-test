@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / main / utility / classes
+# TODO: sfdx-source / Mturner2PG / main / utility / classes
 
 ### What type of files should be kept in this directory?
 

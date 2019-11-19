@@ -1,4 +1,4 @@
-# TODO: sfdx-source / my_ns_prefix / main / schema / bigObjects
+# TODO: sfdx-source / Mturner2PG / main / schema / bigObjects
 
 ### What type of files should be kept in this directory?
 
