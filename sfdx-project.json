@@ -15,7 +15,8 @@
             "package": "Mturner-Core",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
-            "default": false
+            "default": false,
+            "definitionFile": "config/project-scratch-def.json"
         },
         {
             "path": "sfdx-source/Mturner2PG/my-feature-1",
@@ -23,6 +24,7 @@
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "default": false,
+            "definitionFile": "config/test-build-1-scratch-def.json",
             "dependencies": [
                 {
                     "package": "Mturner-Core",
@@ -39,6 +41,7 @@
         "Mturner-Core@0.1.0-1": "04t1U000007TsoBQAS",
         "Mturner-Core@0.1.0-2": "04t1U000007TsoGQAS",
         "Mturner-Update1": "0Ho1U0000004CONSA2",
-        "Mturner-Update1@0.1.0-1": "04t1U000007TsoLQAS"
+        "Mturner-Update1@0.1.0-1": "04t1U000007TsoLQAS",
+        "Mturner-Core@0.1.0-3": "04t1U000007TsoVQAS"
     }
 }

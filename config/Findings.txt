@@ -1,0 +1,48 @@
+You cant update a class by including it in the new package. You need to create a new file that extends to first or something.
+    -"You're trying to include ApexTrigger ContactTrigger in Package 2. This component already exists in Package 1, which Package ver 1 depends on. You can't include the same component in both packages."
+Can't find were the package is saved as beta. Maybe it shows up when you promote the package to release or published but idk
+So far, I have had to manually add in the dependency to the package directory. When creating a new package, the package directory can be updated with the new version name, number, and dependency versons/packages for each one. 
+    -Change it at the top to create the alias and package at the bottom.
+You can only create as many 2gp packages as you have scratch org creation limits. So for our dev hub, unlimited (as long as we don't change that)
+Using this folder template layout will help with 2gp development as it separates everything out. Here is why:
+    -https://www.youtube.com/watch?v=xLjY-j5pf6c
+Structure and Changes:
+    -CircleCi
+        -The CircleCi folder will be replaced with the pipelines configuration.
+    -.vscode 
+        Is the current workspace settings. (I opt to use user settings so I set and forget)
+    -config
+        -This holds the scratch org definitions. You can customize the package scratch dependencies. See the sfdx-project.json
+    -data
+        -This directory should be used to store import scripts for data, or anonymous apex code to create data.
+    -dev-tools
+        -Any scripts or other tools that help the developer create orgs, push code, hammertest, etc.
+    -mdapi-source
+        -Anything that would use the mdapi to make changes.
+    -sfdx-source:   
+        -This is where our source will live
+            -Mturner2PG:
+                -package namespace
+                    -main
+                        -where the main core package will live. I see this as being the objects that all packages can use and the classes needed to communicate with the GAPI.
+                        -Has some folders but they are in two sets, main and the rest.
+                            -Main:
+                                -This is were the code will be pulled down to from the scratch org when you are developing or created from the cli. This is not to be packaged or committed. 
+                                -Drag the files from the place they were added to and put them in the core or feature of your choice
+                                -(May be a way to fix this or modify it but I didn't dig into that)
+                            -The Rest:
+                                -This is the core app. All of the pieces of it should live in these files. If there is not a folder for your type of file (ex the trigger folder didn't exist yet), then create it and save it. Allows for more compartmentalizing of the code to find it faster. 
+                                -Also use folders for further separating code so that its not soup.
+                    -my-feature-1
+                        -First package feature. This would be like another add on another feature to the core package, or a product that is built off the core package.
+            -upackaged
+                -This would be one of two things. Either:
+                    -The spot where sf developers could package up the code that helps canvas side developers develop with ease (the pmc dev package for example)
+                        or
+                    -The spot where we develop out a support package for the main package that can help...with...something..idk. Business decision here.
+            -untracked
+                -This would specifically be for the sf developer to place all their stuff that they want that helps them develop more specifically in their orgs.
+    -temp
+        -This folder is for the output and input of package deploy and retrieve. 
+    -sfdx-project.json
+        -https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev2gp_config_file.htm

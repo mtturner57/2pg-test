@@ -18,6 +18,8 @@
 !.gitignore
 !README.md
 !*.json
+!Findings.txt
+!exclude_from_sfdx-project.txt
 
 # And each ????? listed below...
 # (ie. your whitelisted files)
