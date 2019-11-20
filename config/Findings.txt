@@ -1,6 +1,6 @@
 You cant update a class by including it in the new package. You need to create a new file that extends to first or something.
     -"You're trying to include ApexTrigger ContactTrigger in Package 2. This component already exists in Package 1, which Package ver 1 depends on. You can't include the same component in both packages."
-Can't find were the package is saved as beta. Maybe it shows up when you promote the package to release or published but idk
+Can't find were the package is saved as beta in the packorg or dev hub. Maybe it shows up when you promote the package to release or published but idk
 So far, I have had to manually add in the dependency to the package directory. When creating a new package, the package directory can be updated with the new version name, number, and dependency versons/packages for each one. 
     -Change it at the top to create the alias and package at the bottom.
 You can only create as many 2gp packages as you have scratch org creation limits. So for our dev hub, unlimited (as long as we don't change that)
