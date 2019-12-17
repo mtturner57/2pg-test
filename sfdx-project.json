@@ -13,8 +13,8 @@
         {
             "path": "sfdx-source/Mturner2PG/main",
             "package": "Mturner-Core",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
+            "versionName": "ver 2",
+            "versionNumber": "2.0.0.NEXT",
             "default": false,
             "definitionFile": "config/project-scratch-def.json"
         },
@@ -43,6 +43,10 @@
         "Mturner-Update1": "0Ho1U0000004CONSA2",
         "Mturner-Update1@0.1.0-1": "04t1U000007TsoLQAS",
         "Mturner-Core@0.1.0-3": "04t1U000007TsoVQAS",
-        "Mturner-Update1@0.1.0-2": "04t1U000007TsofQAC"
+        "Mturner-Update1@0.1.0-2": "04t1U000007TsofQAC",
+        "Mturner-Core@0.1.0-4": "04t1U000006dZudQAE",
+        "Mturner-Core@0.1.0-5": "04t1U000006dZuiQAE",
+        "Mturner-Core@1.0.0-1": "04t1U000006dZunQAE",
+        "Mturner-Core@1.0.0-0": "04t1U000006dZusQAE"
     }
 }
