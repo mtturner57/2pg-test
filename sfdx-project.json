@@ -13,10 +13,11 @@
         {
             "path": "sfdx-source/Mturner2PG/main",
             "package": "Mturner-Core",
-            "versionName": "ver 2",
-            "versionNumber": "2.0.0.NEXT",
+            "versionName": "ver 3",
+            "versionNumber": "3.2.0.NEXT",
             "default": false,
-            "definitionFile": "config/project-scratch-def.json"
+            "definitionFile": "config/project-scratch-def.json",
+            "ancestorVersion": "3.1.0"
         },
         {
             "path": "sfdx-source/Mturner2PG/my-feature-1",
@@ -33,7 +34,7 @@
             ]
         }
     ],
-    "namespace": "Mturner2PG",
+    "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "47.0",
     "packageAliases": {
@@ -47,6 +48,13 @@
         "Mturner-Core@0.1.0-4": "04t1U000006dZudQAE",
         "Mturner-Core@0.1.0-5": "04t1U000006dZuiQAE",
         "Mturner-Core@1.0.0-1": "04t1U000006dZunQAE",
-        "Mturner-Core@1.0.0-0": "04t1U000006dZusQAE"
+        "Mturner-Core@1.0.0-0": "04t1U000006dZusQAE",
+        "Mturner-Core@2.0.0-1": "04t1U000006da1PQAQ",
+        "Mturner-Core@2.0.0-2": "04t1U000006da1UQAQ",
+        "Mturner-Core@2.1.0-1": "04t1U000006da1eQAA",
+        "Mturner-Core@2.1.0-2": "04t1U000006da1jQAA",
+        "Mturner-Core@3.0.0-1": "04t1U000006da23QAA",
+        "Mturner-Core@3.1.0-1": "04t1U000006da2SQAQ",
+        "Mturner-Core@3.2.0-1": "04t1U000006da2XQAQ"
     }
 }

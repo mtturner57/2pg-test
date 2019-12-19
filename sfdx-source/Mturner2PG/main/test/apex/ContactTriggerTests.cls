@@ -12,4 +12,17 @@ private without sharing class ContactTriggerTests {
 
         System.Assert([Select Count() from Contact where LastName = 'TurnerBAHHH foo'] == 1);
     }
+
+    @isTest
+    private static void test2(){
+        Boolean isFailed = false;
+        try{
+            GlobalService.printContactFields();
+        }
+        catch(Exception ex){
+            isFailed = true;
+        }
+
+        System.assert(!isFailed);
+    }
 }
